@@ -84,7 +84,7 @@ export default function Contact() {
             <p className="u-label">Follow</p>
             <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>
             <a href={profile.github} target="_blank" rel="noopener">GitHub ↗</a>
-            <a href={profile.resume} target="_blank" rel="noopener">Resume ↗</a>
+            <a href={profile.resume} download={profile.resumeFileName}>Resume ↓</a>
           </div>
           <div className="col">
             <p className="u-label">Write</p>

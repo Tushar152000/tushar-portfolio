@@ -8,6 +8,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/tusharchauhantech/",
   github: "https://github.com/Tushar152000",
   resume: "/resume.pdf",
+  resumeFileName: "Tushar-Chauhan-Resume.pdf",
   openTo: "Open to SDE II · Full-Stack · Backend · AI Engineer roles",
   credentials: [
     "Software Engineer II",

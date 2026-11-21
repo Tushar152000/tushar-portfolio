@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Full-stack & backend engineer with 2+ years shipping AI-powered SaaS and cloud infrastructure. Next.js, Node.js, TypeScript, GCP, AWS. Open to SDE II, Full-Stack, Backend and AI Engineer roles.",
   openGraph: {
     title: "Tushar Chauhan — Software Engineer II",
-    description: "Every product is a request. I build the response.",
+    description: "I ship AI products that scale. Full-stack engineer building GPT-4o features used by 2,000+ students every month.",
     type: "website",
   },
 };
