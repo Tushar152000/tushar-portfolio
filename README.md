@@ -1,5 +1,7 @@
 # Tushar Chauhan — Portfolio
 
+**Live:** https://tusharchauhan-dev.vercel.app
+
 A motion-heavy, futuristic developer portfolio built with **Next.js 14 (App Router) + TypeScript**, **GSAP + ScrollTrigger**, **Lenis** smooth scroll and **Three.js**.
 
 Structure follows a classic award-style layout: loader → hero → about → stats marquee → pinned showreel → services → `{ WORK }` → full-screen case studies → `{ PROCESS }` → stacking process cards → contact.
