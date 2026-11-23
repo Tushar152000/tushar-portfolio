@@ -42,3 +42,8 @@ lib/            motion.ts (GSAP + Lenis) · webgl.ts (code field + terrain) · r
 data/           content.ts
 public/         resume.pdf
 ```
+
+## Deployment
+- **Hosting:** Vercel, connected to this GitHub repo. Pushing to `main` deploys to production; every pull request gets its own preview URL.
+- **CI:** `.github/workflows/ci.yml` type-checks and runs a production build on every push and pull request. A red check means the change would break the live site, so fix it before merging.
+- **Ship a change:** commit, then `git push origin main` (or open a PR and merge it). The site updates in about a minute.
