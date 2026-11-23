@@ -68,7 +68,7 @@ export function createCodeField(canvas: HTMLCanvasElement): FieldHandle | null {
     const s = new THREE.Sprite(m);
     s.scale.set(h * info.aspect, h, 1);
     scene.add(s);
-    const it: Item = { s, m, kind, lit, ok, speed: kind === "snip" ? 0.045 + Math.random() * 0.03 : 0.06 + Math.random() * 0.09, base: kind === "snip" ? 0.55 : lit ? 0.95 : 0.7, ph: 0 };
+    const it: Item = { s, m, kind, lit, ok, speed: kind === "snip" ? 0.045 + Math.random() * 0.03 : 0.06 + Math.random() * 0.09, base: kind === "snip" ? 0.35 : lit ? 0.6 : 0.45, ph: 0 };
     place(it, true);
     items.push(it);
   }
@@ -109,7 +109,7 @@ export function createCodeField(canvas: HTMLCanvasElement): FieldHandle | null {
       }
       if (it.s.position.z > NEAR) place(it, false);
       const z = it.s.position.z;
-      it.m.opacity = Math.max(0, Math.min(Math.min(1, (z - FAR) / 25), Math.min(1, (NEAR - z) / 10))) * it.base;
+      it.m.opacity = Math.max(0, Math.min(Math.min(1, (z - FAR) / 25), Math.min(1, (NEAR - z) / 35))) * it.base; // fade out well before reaching the camera so nothing gets huge
     });
     cam.position.x += (mx * 3 - cam.position.x) * 0.04;
     cam.position.y += (-my * 2 - cam.position.y) * 0.04;

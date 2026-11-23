@@ -18,7 +18,7 @@ export default function About() {
           <div className="cta-row">
             <a href="#contact" className="btn magnetic"><i /><Roll>Let&apos;s talk</Roll></a>
             <a href="#work" className="btn btn--ghost magnetic"><Roll>See the work</Roll></a>
-            <a href={profile.resume} download={profile.resumeFileName} className="btn btn--ghost magnetic"><Roll>Download Resume ↓</Roll></a>
+            <a href={profile.resume} download={profile.resumeFileName} data-resume className="btn btn--ghost magnetic"><Roll>Download Resume ↓</Roll></a>
           </div>
         </div>
       </section>

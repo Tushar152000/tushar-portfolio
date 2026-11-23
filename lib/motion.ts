@@ -95,7 +95,10 @@ export function initMotion(): () => void {
       /* case studies */
       gsap.utils.toArray<HTMLElement>(".case").forEach((c) => {
         gsap.fromTo(c.querySelector(".case__media"), { clipPath: "inset(12% 12% 12% 12%)" }, { clipPath: "inset(0% 0% 0% 0%)", ease: "none", scrollTrigger: { trigger: c, start: "top 85%", end: "top 25%", scrub: true } });
-        gsap.from(c.querySelectorAll(".flow .n"), { x: -30, stagger: 0.12, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: c, start: "top 55%" } });
+        const shot = c.querySelector(".shot img");
+        if (shot) gsap.fromTo(shot, { scale: 1.12 }, { scale: 1, ease: "none", scrollTrigger: { trigger: c, start: "top 85%", end: "top 25%", scrub: true } });
+        const nodes = c.querySelectorAll(".flow .n");
+        if (nodes.length) gsap.from(nodes, { x: -30, stagger: 0.12, duration: 0.7, ease: "power3.out", scrollTrigger: { trigger: c, start: "top 55%" } });
         gsap.fromTo(c.querySelector(".idx"), { yPercent: 30 }, { yPercent: -10, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: true } });
       });
 

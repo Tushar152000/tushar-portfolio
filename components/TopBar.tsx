@@ -81,7 +81,7 @@ export default function TopBar() {
           <div>
             <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>
             <a href={profile.github} target="_blank" rel="noopener">GitHub ↗</a>
-            <a href={profile.resume} download={profile.resumeFileName}>Resume ↓</a>
+            <a href={profile.resume} download={profile.resumeFileName} data-resume>Resume ↓</a>
           </div>
           <span>{profile.email}</span>
         </div>

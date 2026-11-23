@@ -10,10 +10,13 @@ export default function Hero() {
           <span className="ln"><span>that scale.</span></span>
           <span className="ln"><span className="ac">Full-stack.</span></span>
         </h1>
-        <div className="hero__foot u-label">
-          <span className="status"><i className="pulse" />{profile.openTo}</span>
-          <span>{profile.name} — {profile.role} @ {profile.company.split(" ")[0]}</span>
-          <a href={profile.resume} download={profile.resumeFileName} style={{ color: "var(--accent)" }}>Download Resume ↓</a>
+        <div className="hero__foot">
+          <span className="status status--hero"><i className="pulse" />{profile.openTo}</span>
+          <span className="hero__who">
+            <b>{profile.name}</b>
+            <span>{profile.role} @ {profile.company.split(" ")[0]}</span>
+          </span>
+          <a className="hero__cv" href={profile.resume} download={profile.resumeFileName} data-resume>Download Resume ↓</a>
         </div>
       </div>
     </section>

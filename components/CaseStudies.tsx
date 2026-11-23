@@ -1,5 +1,6 @@
 import { cases } from "@/data/content";
 import { Roll } from "./Roll";
+import CaseWindow from "./CaseWindow";
 
 export default function CaseStudies() {
   return (
@@ -10,17 +11,7 @@ export default function CaseStudies() {
           <article className="case" key={c.name}>
             <div className="case__media">
               <span className="idx">{idx}</span>
-              <div className="win">
-                <header><i /><i /><i /><span>{c.window}</span></header>
-                <div className="flow">
-                  {c.flow.map((n, j) => (
-                    <div key={j} style={{ display: "contents" }}>
-                      <div className="n"><b>{n.tag}</b><span>{n.text}</span><em>{n.status}</em></div>
-                      {j < c.flow.length - 1 && <div className="arrow" />}
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <CaseWindow c={c} />
             </div>
             <div className="case__info">
               <span className="case__index">{idx} / {c.meta}</span>

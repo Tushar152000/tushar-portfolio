@@ -11,6 +11,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Process from "@/components/Process";
 import Contact from "@/components/Contact";
 import MotionProvider from "@/components/MotionProvider";
+import ResumeModal from "@/components/ResumeModal";
 import { dividers } from "@/data/content";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <Process />
         <Contact />
       </main>
+      <ResumeModal />
       <MotionProvider />
     </>
   );

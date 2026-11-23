@@ -63,6 +63,8 @@ export type CaseStudy = {
   description: string;
   flow: FlowNode[];
   cta: { label: string; href: string; external?: boolean };
+  /** Optional real screenshot shown in the window instead of the flow diagram. */
+  image?: { src: string; alt: string };
 };
 
 export const cases: CaseStudy[] = [
@@ -79,6 +81,7 @@ export const cases: CaseStudy[] = [
       { tag: "EDGE", text: "cloudflare workers · auth bridge", status: "sso" },
     ],
     cta: { label: "Visit website ↗", href: "https://www.bosscoderacademy.com/", external: true },
+    image: { src: "/work/platform-revamp.webp", alt: "Bosscoder Academy learner dashboard: next-class card, onboarding progress steps and sidebar navigation" },
   },
   {
     window: "sales-ai · pipeline",
@@ -107,6 +110,7 @@ export const cases: CaseStudy[] = [
       { tag: "USERS", text: "students every month", status: "2,000+" },
     ],
     cta: { label: "Live demo ↗", href: "https://www.bosscoderacademy.com/free-ats-friendly-resume", external: true },
+    image: { src: "/work/ai-resume-builder.webp", alt: "AI Resume Builder: step-by-step form for general information with a live A4 resume preview" },
   },
   {
     window: "nec · attendance",

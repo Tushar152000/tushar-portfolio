@@ -21,7 +21,7 @@ export default function Background() {
     const fallback = window.setTimeout(start, 1500);
 
     const onScroll = () => {
-      if (ref.current) ref.current.style.opacity = window.scrollY > window.innerHeight * 0.7 ? "0.55" : "1";
+      if (ref.current) ref.current.style.opacity = window.scrollY > window.innerHeight * 0.7 ? "0.22" : "";
     };
     window.addEventListener("scroll", onScroll, { passive: true });
 
