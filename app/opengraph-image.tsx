@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { profile } from "@/data/content";
 
-export const alt = `${profile.name} — ${profile.role}. I ship AI products that scale.`;
+export const alt = `${profile.name}, ${profile.role}. I ship AI products that scale.`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
